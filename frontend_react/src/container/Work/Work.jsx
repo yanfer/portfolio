@@ -7,7 +7,7 @@ import { urlFor, client } from '../../client';
 import './Work.scss';
 
 const Work = () => {
-  const [activeFilter, setActiveFilter] = useState('All ');
+  const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
@@ -34,7 +34,7 @@ const Work = () => {
             <div
               key={index}
               onClick={() => handleWorkFilter(item)}
-              className={`app_work-filter-item app_flex p-text ${
+              className={`app__work-filter-item app__flex p-text ${
                 activeFilter === item ? 'item-active' : ''
               }`}
             >
