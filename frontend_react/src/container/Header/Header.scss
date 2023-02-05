@@ -173,7 +173,11 @@
     object-fit: contain;
     z-index: 1;
     position: relative;
-    bottom: -60px;
+    bottom: -65px;
+
+    @media screen and (min-width: 1600px) {
+      height: 110%;
+    }
   }
 
   .overlay_circle {
